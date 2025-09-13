@@ -1,0 +1,245 @@
+footer {
+  padding-top: 30px;
+  background-color: rgba(3, 35, 52, 0.85);
+  border-top: 1px solid #444;
+  margin-top: auto;
+  padding-bottom: 10px;
+}
+
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem 1rem;
+} */
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* color: white; */
+  margin-bottom: 1rem;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.footerTitle .span h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* color: white; */
+  margin-bottom: 1rem;
+  background: rgb(185,10,10);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+.footerSubtitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footerDescription {
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color:  rgba(43, 97, 127, 0.85);
+  color: rgba(3, 35, 52, 0.85);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  background-color: rgb(185, 10, 10);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 0.5rem;
+}
+
+.footerLink {
+  color:  white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.footerLink:hover {
+  color: rgb(185, 10, 10);
+  padding-left: 0.25rem;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ccc;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.contactIcon {
+  flex-shrink: 0;
+  color: rgb(185, 10, 10);
+}
+
+.footerBottom {
+  border-top: 1px solid  rgba(3, 35, 52, 0.85);
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.disclaimer {
+  color: #aaa;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 0.75rem 1rem;
+  }
+
+  .footerContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footerSection {
+    text-align: center;
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .contactItem {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem 0.5rem 1rem;
+  }
+
+  .footerContent {
+    gap: 1.5rem;
+  }
+
+  .footerTitle {
+    font-size: 1.25rem;
+  }
+
+  .footerSubtitle {
+    font-size: 1rem;
+  }
+}
+/* .footerTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+
+} */
+/* .footerSection {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footerTitle {
+  font-family: "Rouge Script", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ddd; 
+  /* letter-spacing: 1px;
+}
+
+.footerTitle .span { */
+  /* color: rgb(185,10,10); 
+  font-weight: bold;
+} */ 
+ .footerSection {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footerTitle {
+  font-family: "Rouge Script", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ddd; /* Campus ka color */
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* logo aur text ke beech thoda gap */
+}
+
+.footerTitle .span {
+  color: rgb(185, 10, 10); /* dark red Connect */
+  font-weight: bold;
+}
+
+.footerLogo {
+  width: 40px;   /* apne design ke hisaab se adjust karna */
+  height: auto;
+}
+

@@ -1,0 +1,61 @@
+{
+  "teamMembers": [
+    {
+      "name": "Dr. Sarah Williams",
+      "role": "Event Director",
+      "department": "Student Affairs",
+      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face",
+      "bio": "Passionate about creating meaningful student experiences and fostering campus community engagement."
+    },
+    {
+      "name": "Michael Chen",
+      "role": "Technology Coordinator",
+      "department": "IT Services",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
+      "bio": "Tech enthusiast dedicated to making event management seamless and accessible for all students."
+    },
+    {
+      "name": "Emily Rodriguez",
+      "role": "Student Engagement Specialist",
+      "department": "Student Life",
+      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face",
+      "bio": "Focused on building inclusive communities and ensuring every student feels welcome and valued."
+    },
+    {
+      "name": "David Thompson",
+      "role": "Communications Manager",
+      "department": "Marketing",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
+      "bio": "Creative communicator who helps spread the word about amazing campus events and opportunities."
+    }
+  ],
+  "values": [
+    {
+      "title": "Inclusivity",
+      "description": "We believe every student deserves access to meaningful campus experiences, regardless of background or interests.",
+      "icon": "🤝"
+    },
+    {
+      "title": "Innovation",
+      "description": "We continuously evolve our platform and events to meet the changing needs of our dynamic student community.",
+      "icon": "💡"
+    },
+    {
+      "title": "Community",
+      "description": "Building lasting connections and fostering a sense of belonging is at the heart of everything we do.",
+      "icon": "🏘️"
+    },
+    {
+      "title": "Excellence",
+      "description": "We strive for the highest quality in all our events, services, and student interactions.",
+      "icon": "⭐"
+    }
+  ],
+  "milestones": [
+    { "year": "2020", "event": "CampusConnect Platform Launch" },
+    { "year": "2021", "event": "First Virtual Event Series" },
+    { "year": "2022", "event": "10,000+ Student Registrations" },
+    { "year": "2023", "event": "International Student Integration" },
+    { "year": "2024", "event": "AI-Powered Event Recommendations" }
+  ]
+}

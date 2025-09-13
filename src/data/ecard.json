@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "title": "Hackathon 2025",
+    "category": "Tech",
+    "description": "A 24-hour coding marathon where students showcase skills, build apps, and compete for exciting prizes. This intensive event brings together the brightest minds in technology to create innovative solutions to real-world problems. Participants will work in teams, have access to mentors, and compete for substantial cash prizes and internship opportunities.",
+    "image": "p1.jpeg",
+    "date": "2025-10-20T15:00:00",
+    "venue": "Computer Science Building, Room 101"
+  },
+  {
+    "id": 2,
+    "title": "Cultural Night",
+    "category": "Cultural",
+    "description": "An evening filled with music, dance, and drama performances celebrating the spirit of cultural diversity. This spectacular event showcases the rich tapestry of cultures represented on our campus through traditional and contemporary performances, delicious food from around the world, and interactive cultural displays.",
+    "image": "p2.jpg",
+    "date": "2025-10-25T19:00:00",
+    "venue": "Main Auditorium"
+  },
+  {
+    "id": 3,
+    "title": "Cricket Tournament",
+    "category": "Sports",
+    "description": "Inter-college cricket championship where teams battle for glory, trophies, and thrilling audience moments. This prestigious tournament features the best cricket talent from universities across the region, with professional umpires, live commentary, and exciting prizes for winners and outstanding performers.",
+    "image": "p3.jpg",
+    "date": "2025-11-01T09:00:00",
+    "venue": "University Cricket Ground"
+  },
+  {
+    "id": 4,
+    "title": "Guest Lecture on AI",
+    "category": "Academic",
+    "description": "Explore the future of Artificial Intelligence with industry experts sharing insights, trends, and innovations. This exclusive lecture features renowned AI researchers and industry leaders who will discuss cutting-edge developments in machine learning, neural networks, and the ethical implications of AI technology.",
+    "image": "p4.jpg",
+    "date": "2025-11-05T14:00:00",
+    "venue": "Engineering Hall, Room 205"
+  },
+  {
+    "id": 5,
+    "title": "Music Festival",
+    "category": "Cultural",
+    "description": "A vibrant day of live bands, DJs, and performances that bring energy, rhythm, and joy to the campus crowd. This all-day festival features both student and professional artists, multiple stages, food trucks, and interactive activities that create an unforgettable musical experience for everyone.",
+    "image": "p5.jpg",
+    "date": "2025-11-15T17:00:00",
+    "venue": "Central Campus Lawn"
+  },
+  {
+    "id": 6,
+    "title": "Basketball League",
+    "category": "Sports",
+    "description": "Exciting inter-university basketball matches where players show their skills and teams fight for the title. This competitive league features round-robin matches, playoffs, and championship finals with professional referees, live streaming, and awards ceremony for top performers.",
+    "image": "p6.jpg",
+    "date": "2025-11-20T16:00:00",
+    "venue": "Sports Complex Basketball Court"
+  },
+  {
+    "id": 7,
+    "title": "Photography Exhibition",
+    "category": "Art",
+    "description": "An exhibition showcasing creative photography by students, capturing stories, emotions, and campus memories. This curated exhibition features both digital and film photography, with categories including landscape, portrait, street photography, and experimental techniques. Professional photographers will judge and provide feedback.",
+    "image": "p7.jpg",
+    "date": "2025-11-25T12:00:00",
+    "venue": "Art Gallery, Fine Arts Building"
+  },
+  {
+    "id": 8,
+    "title": "Robotics Workshop",
+    "category": "Tech",
+    "description": "Hands-on robotics workshop where students design, code, and build robots while learning real-world skills. This intensive workshop covers Arduino programming, sensor integration, mechanical design, and AI implementation. Participants will build and program their own robots to complete various challenges.",
+    "image": "p8.jpg",
+    "date": "2025-12-01T09:00:00",
+    "venue": "Robotics Lab, Engineering Building"
+  },
+  {
+    "id": 9,
+    "title": "Drama Play",
+    "category": "Cultural",
+    "description": "A stage play performed by the drama society, blending acting, storytelling, and entertainment for all students. This original production features talented student actors, professional direction, stunning costumes, and innovative stage design that brings classic literature to life in a modern context.",
+    "image": "p9.jpg",
+    "date": "2025-12-05T18:00:00",
+    "venue": "Theater Hall, Arts Center"
+  },
+  {
+    "id": 10,
+    "title": "Coding Bootcamp",
+    "category": "Tech",
+    "description": "An intensive bootcamp teaching web and app development where learners practice coding through real projects. This comprehensive program covers front-end development, back-end programming, database design, and deployment strategies. Students will build portfolio projects and receive career guidance.",
+    "image": "p10.jpg",
+    "date": "2025-12-10T10:00:00",
+    "venue": "Computer Lab, IT Building"
+  },
+  {
+    "id": 11,
+    "title": "Science Fair",
+    "category": "Academic",
+    "description": "A showcase of innovative science projects and experiments where students present creative research ideas. This prestigious fair features projects from all science disciplines, with expert judges, interactive demonstrations, and opportunities for students to present their research to the broader community.",
+    "image": "p11.jpg",
+    "date": "2025-12-15T11:00:00",
+    "venue": "Science Building, Exhibition Hall"
+  },
+  {
+    "id": 12,
+    "title": "Football Cup",
+    "category": "Sports",
+    "description": "Thrilling inter-department football matches where teams compete with passion, energy, and team spirit on field. This exciting tournament features multiple divisions, professional referees, live commentary, and a grand finale with trophies and individual awards for outstanding players.",
+    "image": "p12.jpg",
+    "date": "2025-12-18T15:00:00",
+    "venue": "University Football Stadium"
+  },
+  {
+    "id": 13,
+    "title": "Debate Competition",
+    "category": "Academic",
+    "description": "Battle of ideas where sharp minds debate on current topics, showcasing logic, reasoning, and public speaking. This prestigious competition features multiple debate formats, expert judges, and topics covering politics, technology, ethics, and social issues. Winners receive scholarships and recognition.",
+    "image": "p13.jpg",
+    "date": "2025-12-20T13:00:00",
+    "venue": "Debate Hall, Law Building"
+  },
+  {
+    "id": 14,
+    "title": "New Year Gala",
+    "category": "Cultural",
+    "description": "Celebrate the new year with live performances, great food, fun activities, and dazzling fireworks at midnight. This spectacular gala features multiple entertainment stages, gourmet dining, interactive games, photo booths, and a grand countdown celebration with professional fireworks display.",
+    "image": "p14.jpg",
+    "date": "2025-12-31T20:00:00",
+    "venue": "Grand Ballroom, Student Center"
+  },
+  {
+    "id": 15,
+    "title": "Hackathon 2024",
+    "category": "Technology",
+    "description": "A 48-hour coding competition where students developed innovative solutions to real-world problems. Over 200 participants showcased their creativity and technical skills. The event featured industry mentors, workshops, and exciting prizes for the winning teams.",
+    "image": "./p1.jpeg",
+    "date": "2024-11-15T09:00:00",
+    "venue": "Computer Science Building, Main Hall"
+  },
+  {
+    "id": 16,
+    "title": "Spring Music Festival",
+    "category": "Cultural",
+    "description": "An unforgettable evening of live music featuring student bands, solo artists, and cultural performances. The festival celebrated the diverse musical talents of our campus community with multiple stages, food vendors, and interactive activities throughout the day.",
+    "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop",
+    "date": "2024-03-22T18:00:00",
+    "venue": "Central Campus Lawn"
+  },
+  {
+    "id": 17,
+    "title": "Research Symposium",
+    "category": "Academic",
+    "description": "Graduate and undergraduate students presented their research findings across various disciplines. The event featured keynote speakers, interactive poster sessions, and networking opportunities with industry professionals and academic researchers.",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
+    "date": "2024-10-08T10:00:00",
+    "venue": "Research Center, Conference Hall"
+  }
+]

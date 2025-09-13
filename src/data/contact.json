@@ -1,0 +1,51 @@
+{
+  "college": {
+    "name": "CampusConnect University",
+    "address": "123 Education Boulevard, Academic City, AC 12345",
+    "phone": "+1 (555) 123-4567",
+    "email": "info@campusconnect.edu",
+    "website": "www.campusconnect.edu"
+  },
+  "departments": [
+    {
+      "name": "Event Management",
+      "contact": "Dr. Sarah Williams",
+      "email": "events@campusconnect.edu",
+      "phone": "+1 (555) 123-4568"
+    },
+    {
+      "name": "Student Affairs",
+      "contact": "Mr. John Martinez",
+      "email": "studentaffairs@campusconnect.edu",
+      "phone": "+1 (555) 123-4569"
+    },
+    {
+      "name": "Academic Services",
+      "contact": "Dr. Emily Chen",
+      "email": "academics@campusconnect.edu",
+      "phone": "+1 (555) 123-4570"
+    },
+    {
+      "name": "IT Support",
+      "contact": "Tech Support Team",
+      "email": "support@campusconnect.edu",
+      "phone": "+1 (555) 123-4571"
+    }
+  ],
+  "emergency": {
+    "campus_security": "+1 (555) 911-0000",
+    "health_center": "+1 (555) 911-0001",
+    "counseling": "+1 (555) 911-0002"
+  },
+  "social_media": {
+    "facebook": "https://facebook.com/campusconnect",
+    "twitter": "https://twitter.com/campusconnect",
+    "instagram": "https://instagram.com/campusconnect",
+    "linkedin": "https://linkedin.com/school/campusconnect"
+  },
+  "office_hours": {
+    "monday_friday": "8:00 AM - 6:00 PM",
+    "saturday": "9:00 AM - 2:00 PM",
+    "sunday": "Closed"
+  }
+}

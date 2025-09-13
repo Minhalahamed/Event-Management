@@ -1,0 +1,297 @@
+/* ===== Your Original Styles (unchanged) ===== */
+.hero {
+  background: linear-gradient(135deg, rgba(3,35,52,0.85), #b90a0a);
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 0px 0px 12px 12px;
+  margin-top: 4.1rem;
+    top: 46px;
+    position: relative;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.registerContainer {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #333;
+  margin-top: 2rem;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #666;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.required {
+  color: #e74c3c;
+}
+
+.formGroup input {
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.formGroup input:focus {
+  border-color: #1a849e;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.875rem;
+  margin-top: 0.3rem;
+}
+
+/* Form buttons */
+.formActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.primaryBtn {
+  background: rgba(3, 35, 52, 0.85);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.6rem;
+  font-size: 0.85rem;
+  padding: 0.55rem 1.25rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.primaryBtn:hover {
+  background: linear-gradient(135deg, rgba(3, 35, 52, 0.85), rgb(185,10,10));
+  transform: translateY(-2px);
+}
+
+.secondaryBtn {
+  padding: 0.8rem 1.5rem;
+  background-color: #f2f2f2;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.secondaryBtn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Success page */
+.successContainer {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0fdf4;
+  padding: 2rem;
+}
+
+.successBox {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.successIcon {
+  margin-bottom: 1.5rem;
+}
+
+.successTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2667d0;
+  margin-bottom: 0.5rem;
+}
+
+.successMessage {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 2rem;
+}
+
+.successActions a {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: #3b4fd4;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.successActions a:hover {
+  background-color: #266cb7;
+}
+
+.registerPages {
+  display: flex; 
+  justify-content: center;
+  padding: 3rem 1rem;
+  margin-left: 12rem;
+  align-items: center; 
+}
+
+.registerWrapper {
+  display: flex;
+  gap: 3rem;
+  max-width: 900px;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
+
+.registerContainer {
+  flex: 1 1 400px;
+}
+
+.imageSection {
+  flex: 1 1 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageSection img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ===== Responsive Fixes Added ===== */
+
+/* Medium devices */
+@media (max-width: 992px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+  .registerPages {
+    margin-left: 0; /* remove side margin */
+    padding: 2rem 1rem;
+  }
+  .registerWrapper {
+    gap: 2rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .registerWrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .imageSection img {
+    max-width: 300px;
+    margin-top: 2rem;
+  }
+  .formActions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .registerContainer, 
+  .successBox {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  .heroTitle {
+    font-size: 1.6rem;
+  }
+  .heroSubtitle {
+    font-size: 0.9rem;
+  }
+  .primaryBtn, .secondaryBtn {
+    width: 100%;
+    text-align: center;
+  }
+  .imageSection img {
+    max-width: 250px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .heroTitle {
+    font-size: 1.4rem;
+  }
+  .heroSubtitle {
+    font-size: 0.8rem;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+}

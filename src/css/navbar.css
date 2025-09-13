@@ -1,0 +1,194 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Carattere&family=Cookie&family=Great+Vibes&family=Instrument+Serif:ital@0;1&family=Libre+Caslon+Text:wght@400;700&family=Mea+Culpa&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rouge+Script&display=swap');
+.custom-navbar {
+  background-color : rgb(3, 35, 52, 0.85); 
+  
+}
+
+.brand-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+   font-family: "Rouge Script", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.highlight-text {
+  color: rgb(185,10,10);
+    font-weight: 500;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ddd !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: rgb(185,10,10) !important;
+}
+
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .dropdown-menu {
+  background-color: rgba(3, 35, 52, 0.85);  
+  border: 1px solid rgba(3, 35, 52, 0.85); 
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  min-width: 180px;
+}
+
+
+.navbar .dropdown-menu .dropdown-item {
+  color: #ddd;            
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: rgb(185,10,10); 
+  color: #fff;
+  border-radius: 4px;
+}
+
+
+.navbar .dropdown-toggle::after {
+  border-top-color: rgba(3, 35, 52, 0.85); 
+}
+ */
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Cookie&family=Great+Vibes&family=Instrument+Serif:ital@0;1&family=Libre+Caslon+Text:wght@400;700&family=Mea+Culpa&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rouge+Script&display=swap');
+
+.custom-navbar {
+  background-color: rgba(3, 35, 52, 0.85);
+}
+
+/* Brand */
+.brand-text {
+  font-size: 1.5rem;
+  font-family: "Rouge Script", cursive;
+  font-weight: bold;
+  color: #fff;
+}
+
+.highlight-text {
+  color: rgb(185, 10, 10);
+  font-weight: bold;
+}
+
+/* Nav Links */
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ddd !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: rgb(185,10,10) !important;
+}
+
+/* Navbar toggler */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Dropdown */
+.navbar .dropdown-menu {
+  background-color: rgba(3, 35, 52, 0.85);
+  border: 1px solid rgba(3, 35, 52, 0.85);
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  min-width: 180px;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: #ddd;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: rgb(185,10,10); 
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Dropdown caret */
+.navbar .dropdown-toggle::after {
+  border-top-color: rgba(3, 35, 52, 0.85);
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 1024px) {
+  .brand-text {
+    font-size: 1.3rem;
+  }
+  .nav-link {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-text {
+    font-size: 1.2rem;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+  .navbar .dropdown-menu {
+    min-width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-text {
+    font-size: 1rem;
+  }
+  .highlight-text {
+    font-size: 1rem;
+  }
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .navbar .dropdown-menu .dropdown-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* Hero/Banner */
+.hero {
+  position: relative;
+ 
+  margin-top: 56px; /* Default navbar height desktop */
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .hero {
+    margin-top: auto; /* Navbar height badhne par adjust ho jaye */
+  }
+}

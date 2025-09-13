@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Hackathon 2024",
+    "description": "A 48-hour coding competition where students developed innovative solutions to real-world problems. Over 200 participants showcased their creativity and technical skills.",
+    "date": "November 15-17, 2024",
+    "image": "./p1.jpeg",
+    "category": "Technology"
+  },
+  {
+    "id": 2,
+    "title": "Spring Music Festival",
+    "description": "An unforgettable evening of live music featuring student bands, solo artists, and cultural performances. The festival celebrated the diverse musical talents of our campus community.",
+    "date": "March 22, 2024",
+    "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop",
+    "category": "Cultural"
+  },
+  {
+    "id": 3,
+    "title": "Research Symposium",
+    "description": "Graduate and undergraduate students presented their research findings across various disciplines. The event featured keynote speakers and interactive poster sessions.",
+    "date": "October 8, 2024",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
+    "category": "Academic"
+  }
+ 
+]

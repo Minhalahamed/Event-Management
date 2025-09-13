@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "Campus Architecture",
+    "description": "Beautiful modern architecture of our main campus building",
+    "image": "/g1.jpg",
+    "category": "Campus",
+    "date": "2024-01-15"
+  },
+  {
+    "id": 2,
+    "title": "Student Life",
+    "description": "Students enjoying their time in the campus library",
+    "image": "/g2.jpg",
+    "category": "Student Life",
+    "date": "2023-01-20"
+  },
+  {
+    "id": 3,
+    "title": "Tech Lab",
+    "description": "State-of-the-art computer laboratory for students",
+    "image": "/g3.jpg",
+    "category": "Facilities",
+    "date": "2022-01-25"
+  },
+  {
+    "id": 4,
+    "title": "Sports Complex",
+    "description": "Modern sports facilities for all students",
+    "image": "/g4.jpg",
+    "category": "Sports",
+    "date": "2024-02-01"
+  },
+  {
+    "id": 5,
+    "title": "Library Interior",
+    "description": "Peaceful study environment in our main library",
+    "image": "/g12.jpg",
+    "category": "Facilities",
+    "date": "2023-02-05"
+  },
+  {
+    "id": 6,
+    "title": "Cafeteria",
+    "description": "Modern dining hall serving diverse cuisines",
+    "image": "/g5.jpg",
+    "category": "Facilities",
+    "date": "2022-02-10"
+  },
+  {
+    "id": 7,
+    "title": "Graduation Ceremony",
+    "description": "Celebrating our graduates' achievements",
+    "image": "/g6.jpg",
+    "category": "Events",
+    "date": "2024-02-15"
+  },
+  {
+    "id": 8,
+    "title": "Research Lab",
+    "description": "Advanced research facilities for scientific studies",
+    "image": "/g11.jpg",
+    "category": "Research",
+    "date": "2024-02-20"
+  },
+  {
+    "id": 9,
+    "title": "Student Dormitories",
+    "description": "Comfortable living spaces for residential students",
+    "image": "/g9.jpg",
+    "category": "Housing",
+    "date": "2023-02-25"
+  },
+  {
+    "id": 10,
+    "title": "Campus Garden",
+    "description": "/g8.jpg",
+    "image": "/g7.jpg",
+    "category": "Campus",
+    "date": "2024-03-01"
+  },
+  {
+    "id": 11,
+    "title": "Art Studio",
+    "description": "g8.jpg",
+    "image": "/g8.jpg",
+    "category": "Arts",
+    "date": "2024-03-05"
+  },
+  {
+    "id": 12,
+    "title": "Auditorium",
+    "description": "Main auditorium for events and presentations",
+    "image": "/g10.jpg",
+    "category": "Facilities",
+    "date": "2024-03-10"
+  }
+]

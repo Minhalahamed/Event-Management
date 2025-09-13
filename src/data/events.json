@@ -1,0 +1,114 @@
+ [
+  {
+    "id": 1,
+    "title": "Hackathon 2025",
+    "category": "Tech",
+    "description": "A 24-hour coding marathon where students showcase skills, build apps, and compete for exciting prizes.",
+    "image": "p1.jpeg",
+    "date": "2025-10-20T15:00:00"
+  },
+  {
+    "id": 2,
+    "title": "Cultural Night",
+    "category": "Cultural",
+    "description": "An evening filled with music, dance, and drama performances celebrating the spirit of cultural diversity.",
+    "image": "p2.jpg",
+    "date": "2025-10-25T19:00:00"
+  },
+  {
+    "id": 3,
+    "title": "Cricket Tournament",
+    "category": "Sports",
+    "description": "Inter-college cricket championship where teams battle for glory, trophies, and thrilling audience moments.",
+    "image": "p3.jpg",
+    "date": "2025-11-01T09:00:00"
+  },
+  {
+    "id": 4,
+    "title": "Guest Lecture on AI",
+    "category": "Academic",
+    "description": "Explore the future of Artificial Intelligence with industry experts sharing insights, trends, and innovations.",
+    "image": "p4.jpg",
+    "date": "2025-11-05T14:00:00"
+  },
+  {
+    "id": 5,
+    "title": "Music Festival",
+    "category": "Cultural",
+    "description": "A vibrant day of live bands, DJs, and performances that bring energy, rhythm, and joy to the campus crowd.",
+    "image": "p5.jpg",
+    "date": "2025-11-15T17:00:00"
+  },
+  {
+    "id": 6,
+    "title": "Basketball League",
+    "category": "Sports",
+    "description": "Exciting inter-university basketball matches where players show their skills and teams fight for the title.",
+    "image": "p6.jpg",
+    "date": "2025-11-20T16:00:00"
+  },
+  {
+    "id": 7,
+    "title": "Photography Exhibition",
+    "category": "Art",
+    "description": "An exhibition showcasing creative photography by students, capturing stories, emotions, and campus memories.",
+    "image": "p7.jpg",
+    "date": "2025-11-25T12:00:00"
+  },
+  {
+    "id": 8,
+    "title": "Robotics Workshop",
+    "category": "Tech",
+    "description": "Hands-on robotics workshop where students design, code, and build robots while learning real-world skills.",
+    "image": "p8.jpg",
+    "date": "2025-12-01T09:00:00"
+  },
+  {
+    "id": 9,
+    "title": "Drama Play",
+    "category": "Cultural",
+    "description": "A stage play performed by the drama society, blending acting, storytelling, and entertainment for all students.",
+    "image": "p9.jpg",
+    "date": "2025-12-05T18:00:00"
+  },
+  {
+    "id": 10,
+    "title": "Coding Bootcamp",
+    "category": "Tech",
+    "description": "An intensive bootcamp teaching web and app development where learners practice coding through real projects.",
+    "image": "p10.jpg",
+    "date": "2025-12-10T10:00:00"
+  },
+  {
+    "id": 11,
+    "title": "Science Fair",
+    "category": "Academic",
+    "description": "A showcase of innovative science projects and experiments where students present creative research ideas.",
+    "image": "p11.jpg",
+    "date": "2025-12-15T11:00:00"
+  },
+  {
+    "id": 12,
+    "title": "Football Cup",
+    "category": "Sports",
+    "description": "Thrilling inter-department football matches where teams compete with passion, energy, and team spirit on field.",
+    "image": "p12.jpg",
+    "date": "2025-12-18T15:00:00"
+  },
+  {
+    "id": 13,
+    "title": "Debate Competition",
+    "category": "Academic",
+    "description": "Battle of ideas where sharp minds debate on current topics, showcasing logic, reasoning, and public speaking.",
+    "image": "p13.jpg",
+    "date": "2025-12-20T13:00:00"
+  },
+  {
+    "id": 14,
+    "title": "New Year Gala",
+    "category": "Cultural",
+    "description": "Celebrate the new year with live performances, great food, fun activities, and dazzling fireworks at midnight.",
+    "image": "p14.jpg",
+    "date": "2025-12-31T20:00:00"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Minhal Ahmed",
+    "role": "Event Director",
+    "department": "Student Affairs",
+    "image": "/a1.jpeg",
+    "bio": "Passionate about creating meaningful student experiences and fostering campus community engagement."
+  },
+  {
+    "name": "Munazzah Fatima",
+    "role": "Technology Coordinator",
+    "department": "IT Services",
+    "image": "/a2.jpeg",
+    "bio": "Tech enthusiast dedicated to making event management seamless and accessible for all students."
+  },
+  {
+    "name": "Hania Shakeel",
+    "role": "Student Engagement Specialist",
+    "department": "Student Life",
+    "image": "/a3.jpeg",
+    "bio": "Focused on building inclusive communities and ensuring every student feels welcome and valued."
+  },
+  {
+    "name": "Alishba Kashif",
+    "role": "Communications Manager",
+    "department": "Marketing",
+    "image": "/a4.jpeg",
+    "bio": "Creative communicator who helps spread the word about amazing campus events and opportunities."
+  }
+]

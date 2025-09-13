@@ -1,0 +1,66 @@
+/* Countdown Timer Container */
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 35px;                 /* Gap between units bada kiya */
+  margin: 40px auto;          /* Margin thoda aur bada */
+  padding: 25px 35px;         /* Padding bada kiya */
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+}
+
+/* Compact version */
+.timer.compact {
+  gap: 20px;
+  padding: 15px 25px;
+}
+
+/* Each Unit (Days, Hours, Min, Sec) */
+.unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;            /* Unit width bada kiya */
+}
+
+/* Number Value */
+.value {
+  font-size: 3.5rem;          /* Font size bada kiya */
+  font-weight: 900;
+  color: #007b83;
+  margin-bottom: 6px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2); /* Thoda shadow effect */
+}
+
+/* Label (Days, Hours etc.) */
+.label {
+  font-size: 1.1rem;          /* Label thoda bada */
+  font-weight: 600;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Expired Event */
+.expired {
+  text-align: center;
+  font-size: 1.8rem;          /* Expired text bada kiya */
+  font-weight: bold;
+  color: #d9534f;
+  background: #ffe5e5;
+  padding: 20px 30px;
+  border-radius: 12px;
+  margin: 30px auto;
+  width: fit-content;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .unit { min-width: 60px; }
+  .value { font-size: 2.5rem; }
+  .label { font-size: 0.95rem; }
+  .timer { gap: 20px; padding: 15px 20px; }
+  .expired { font-size: 1.5rem; padding: 15px 20px; }
+}

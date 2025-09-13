@@ -1,0 +1,20 @@
+{
+  "Student": {
+    "greeting": "Welcome back, {name}!",
+    "subtitle": "Ready to explore amazing campus events and connect with fellow students?",
+    
+    "color": "#3b82f6"
+  },
+  "Staff": {
+    "greeting": "Welcome to the team, {name}!",
+    "subtitle": "Thank you for your dedication. Discover events and stay connected with our campus community.",
+    
+    "color": "#10b981"
+  },
+  "Guest": {
+    "greeting": "Welcome to our campus, {name}!",
+    "subtitle": "We're excited to have you here. Explore our events and experience the vibrant campus life.",
+    
+    "color": "#8b5cf6"
+  }
+}

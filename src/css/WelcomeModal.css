@@ -1,0 +1,448 @@
+/* Welcome Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+  animation: fadeIn 250ms ease-out;
+}
+
+.modalContent {
+  margin-top: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+  max-width: 480px;
+  width: 100%;
+  max-height: 80vh;
+  /* overflow-y: auto; */
+  position: relative;
+  /* animation: scaleUp 300ms ease-out; */
+  outline: none;
+}
+
+.modalHeader {
+  text-align: center;
+  padding: 2.5rem 2rem 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.modalTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.modalSubtext {
+  font-size: 1.125rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.modalForm {
+  padding: 1.5rem 2rem;
+  text-align: left;
+}
+
+.formLabel {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0.75rem 0 0.25rem;
+  color: #0f172a;
+}
+
+.roleOptions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.roleOptions label {
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  background: #f8fafc;
+}
+
+.roleOptions label:hover {
+  border-color: rgba(3, 35, 52, 0.85);
+  background: rgba(3, 35, 52, 0.05);
+}
+
+.roleOptions input[type="radio"] {
+  margin: 0;
+  accent-color: rgba(3, 35, 52, 0.85);
+}
+
+.roleOptions label:has(input:checked) {
+  border-color: rgba(3, 35, 52, 0.85);
+  background: rgba(3, 35, 52, 0.1);
+  color: rgba(3, 35, 52, 0.85);
+  font-weight: 600;
+}
+
+.nameInput {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease;
+  background: #f8fafc;
+}
+
+.nameInput:focus {
+  outline: none;
+  border-color: rgba(3, 35, 52, 0.85);
+  background: white;
+  box-shadow: 0 0 0 3px rgba(3, 35, 52, 0.1);
+}
+
+.modalActions {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  background-color: rgba(3, 35, 52, 0.85);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  min-width: 140px;
+  box-shadow: 0 4px 14px 0 rgba(3, 35, 52, 0.85);
+}
+
+.primaryButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px 0 rgba(3, 35, 52, 0.85);
+  background: linear-gradient(135deg, rgba(3, 35, 52, 0.85), rgb(185,10,10));
+}
+
+.primaryButton:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 14px 0 rgba(3, 35, 52, 0.85);
+}
+
+.primaryButton:focus {
+  outline: 3px solid rgba(3, 35, 52, 0.85);
+  outline-offset: 2px;
+}
+
+.primaryButton:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.secondaryButton {
+  background: transparent;
+  color: #64748b;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  min-width: 140px;
+}
+
+.secondaryButton:hover {
+  border-color: rgba(3, 35, 52, 0.85);
+  color: rgba(3, 35, 52, 0.85);
+  background-color: rgba(3, 35, 52, 0.05);
+  transform: translateY(-1px);
+}
+
+.secondaryButton:active {
+  transform: translateY(0);
+}
+
+.secondaryButton:focus {
+  outline: 3px solid rgba(3, 35, 52, 0.85);
+  outline-offset: 2px;
+}
+
+.modalFooter {
+  padding: 1.5rem 2rem 2rem;
+  text-align: center;
+  border-top: 1px solid #f1f5f9;
+}
+
+.checkboxLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: #64748b;
+  transition: color 0.2s ease-in-out;
+}
+
+.checkboxLabel:hover {
+  color: #475569;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: rgba(3, 35, 52, 0.85);
+  cursor: pointer;
+}
+
+.checkboxText {
+  user-select: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .modalContent {
+    background: #1e293b;
+    border: 1px solid #334155;
+    margin-top: 4rem;
+  }
+
+  .modalTitle {
+    color: #f1f5f9;
+    background: linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .modalSubtext {
+    color: #94a3b8;
+  }
+
+  .modalHeader,
+  .modalFooter {
+    border-color: #334155;
+  }
+
+  .formLabel {
+    color: #f1f5f9;
+  }
+
+  .roleOptions label {
+    background: #334155;
+    border-color: #475569;
+    color: #cbd5e1;
+  }
+
+  .roleOptions label:hover {
+    border-color: #14b8a6;
+    background: rgba(20, 184, 166, 0.1);
+  }
+
+  .roleOptions label:has(input:checked) {
+    border-color: #14b8a6;
+    background: rgba(20, 184, 166, 0.2);
+    color: #14b8a6;
+  }
+
+  .nameInput {
+    background: #334155;
+    border-color: #475569;
+    color: #f1f5f9;
+  }
+
+  .nameInput:focus {
+    background: #1e293b;
+    border-color: #14b8a6;
+  }
+
+  .secondaryButton {
+    color: #94a3b8;
+    border-color: #475569;
+  }
+
+  .secondaryButton:hover {
+    color: #14b8a6;
+    border-color: #14b8a6;
+    background-color: rgba(20, 184, 166, 0.1);
+  }
+
+  .checkboxLabel {
+    color: #94a3b8;
+  }
+
+  .checkboxLabel:hover {
+    color: #cbd5e1;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .modalOverlay {
+    padding: 0.5rem;
+  }
+
+  .modalContent {
+    border-radius: 12px;
+  }
+
+  .modalHeader {
+    padding: 2rem 1.5rem 1rem;
+  }
+
+  .modalTitle {
+    font-size: 1.75rem;
+  }
+
+  .modalSubtext {
+    font-size: 1rem;
+  }
+
+  .modalForm {
+    padding: 1rem 1.5rem;
+  }
+
+  .roleOptions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .roleOptions label {
+    justify-content: center;
+  }
+
+  .modalActions {
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .modalFooter {
+    padding: 1rem 1.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalTitle {
+    font-size: 1.5rem;
+  }
+
+  .modalSubtext {
+    font-size: 0.875rem;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .modalContent {
+    border: 2px solid #000000;
+  }
+
+  .primaryButton {
+    background: #000000;
+    border: 2px solid #000000;
+  }
+
+  .secondaryButton {
+    border-color: #000000;
+    color: #000000;
+  }
+
+  .secondaryButton:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .modalOverlay,
+  .modalContent,
+  .primaryButton,
+  .secondaryButton {
+    animation: none;
+    transition: none;
+  }
+
+  .primaryButton:hover,
+  .secondaryButton:hover {
+    transform: none;
+  }
+}
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000; /* ✅ Navbar ke z-index se zyada */
+}
+.modalContent {
+  position: relative;
+  z-index: 2100; /* ✅ Overlay se bhi upar */
+}
