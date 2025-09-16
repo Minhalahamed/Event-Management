@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
-import EventCard from '../components/EventCard';
+import EventCard from '../components/Eventcard';
 import eventsData from '../data/ecard.json';
 import "../css/ecard.css"; 
 import pastEvents from "../data/pastEvents.json";
