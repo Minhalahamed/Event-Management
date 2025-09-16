@@ -10,6 +10,7 @@ import eventsData from '../data/ecard.json';
 import "../css/ecard.css"; 
 import pastEvents from "../data/pastEvents.json";
 import "../css/pastevent.css";
+import WelcomeModal from '../components/WelcomeModal';
 import useUserProfile from '../data/useUserprofile';
 import welcomeMessages from '../data/WelcomeMesage.json';
 
