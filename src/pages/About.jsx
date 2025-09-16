@@ -1,4 +1,4 @@
-import styles from '../css/about.module.css';
+import styles from '../css/About.module.css';
 import teamMembers from '../data/teamMembers.json';
 import  values from '../data/values.json'
 import eventsData from '../data/ecard.json';
