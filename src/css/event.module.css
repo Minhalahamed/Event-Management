@@ -5,7 +5,7 @@
   padding: 3rem;
   text-align: center;
   border-radius: 0px 0px 12px 12px;
-  margin-top: 4.2rem;
+  margin-top: 1.2rem;
     top: 46px;
     position: relative;
 }
@@ -29,10 +29,11 @@
 
 .filters {
   background: #fff;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   margin-bottom: 2rem;
   border-radius: 0.75rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-top: 2.5rem;
 }
 
 .filtersContent {

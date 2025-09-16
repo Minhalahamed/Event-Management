@@ -96,38 +96,60 @@ const Feedback = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    const validationErrors = validateAll(formData);
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      return;
+  e.preventDefault();
+
+  // ✅ Validate first
+  const validationErrors = validateAll(formData);
+  if (Object.keys(validationErrors).length > 0) {
+    setErrors(validationErrors);
+    return;
+  }
+
+  setErrors({});
+  setIsSubmitting(true);
+
+  try {
+    // ✅ Send to backend API
+    const res = await fetch("http://localhost:5000/feedback", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        usertypes: formData.userType,   // 👈 match backend column
+        eventattend: formData.eventAttended,
+        ratting: formData.rating,
+        comment: formData.comments,
+      }),
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
+      setIsSubmitted(true);
+      alert("✅ " + data.message);
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        userType: "",
+        eventAttended: "",
+        rating: "",
+        comments: "",
+        anonymous: false,
+      });
+    } else {
+      alert("❌ " + data.message);
     }
-
-    setErrors({});
-    setIsSubmitting(true);
-
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    const feedbacks = JSON.parse(localStorage.getItem("feedbacks") || "[]");
-    feedbacks.push({
-      ...formData,
-      id: Date.now(),
-      timestamp: new Date().toISOString(),
-    });
-    localStorage.setItem("feedbacks", JSON.stringify(feedbacks));
-
+  } catch (err) {
+    console.error("Error:", err);
+    alert("⚠️ Could not connect to server");
+  } finally {
     setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormData({
-      name: "",
-      email: "",
-      userType: "",
-      eventAttended: "",
-      rating: "",
-      comments: "",
-      anonymous: false,
-    });
-  };
+  }
+};
+
 
   if (isSubmitted) {
     return (

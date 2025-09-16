@@ -1,8 +1,7 @@
-import React, { useMemo, useState } from 'react';
-import eventsData from '../data/ecard.json';
+import React, { useMemo, useState } from "react";
+import eventsData from "../data/ecard.json";
 
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 function toDate(value) {
   // supports 'YYYY-MM-DD' or any valid Date parseable string
@@ -13,8 +12,8 @@ function toDate(value) {
 
 function byDateKey(date) {
   const y = date.getFullYear();
-  const m = `${date.getMonth() + 1}`.padStart(2, '0');
-  const d = `${date.getDate()}`.padStart(2, '0');
+  const m = `${date.getMonth() + 1}`.padStart(2, "0");
+  const d = `${date.getDate()}`.padStart(2, "0");
   return `${y}-${m}-${d}`;
 }
 
@@ -46,7 +45,7 @@ function endOfCalendarGrid(date) {
 
 function EventCalendar() {
   const [cursor, setCursor] = useState(new Date());
-  const [selectedDateKey, setSelectedDateKey] = useState('');
+  const [selectedDateKey, setSelectedDateKey] = useState("");
 
   const eventsByDate = useMemo(() => {
     const map = new Map();
@@ -68,23 +67,42 @@ function EventCalendar() {
     cells.push(new Date(d));
   }
 
-  const monthLabel = cursor.toLocaleString(undefined, { month: 'long', year: 'numeric' });
+  const monthLabel = cursor.toLocaleString(undefined, {
+    month: "long",
+    year: "numeric",
+  });
 
-  const selectedEvents = selectedDateKey ? (eventsByDate.get(selectedDateKey) || []) : [];
+  const selectedEvents = selectedDateKey
+    ? eventsByDate.get(selectedDateKey) || []
+    : [];
 
   return (
-    <div className="container" style={{ paddingTop: '6rem', paddingBottom: '2rem' }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
+    <div
+      className="container"
+      style={{ paddingTop: "6rem", paddingBottom: "2rem" }}
+    >
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          marginBottom: "1rem",
+        }}
+      >
         <button
           className="btn btn-outline"
-          onClick={() => setCursor(new Date(cursor.getFullYear(), cursor.getMonth() - 1, 1))}
+          onClick={() =>
+            setCursor(new Date(cursor.getFullYear(), cursor.getMonth() - 1, 1))
+          }
         >
           ‹ Prev
         </button>
         <h2 style={{ margin: 0 }}>{monthLabel}</h2>
         <button
           className="btn"
-          onClick={() => setCursor(new Date(cursor.getFullYear(), cursor.getMonth() + 1, 1))}
+          onClick={() =>
+            setCursor(new Date(cursor.getFullYear(), cursor.getMonth() + 1, 1))
+          }
         >
           Next ›
         </button>
@@ -92,20 +110,31 @@ function EventCalendar() {
 
       <div
         style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(7, 1fr)',
-          gap: '8px',
-          borderTop: '1px solid #e2e8f0',
-          borderLeft: '1px solid #e2e8f0'
+          display: "grid",
+          gridTemplateColumns: "repeat(7, 1fr)",
+          gap: "8px",
+          borderTop: "1px solid #e2e8f0",
+          borderLeft: "1px solid #e2e8f0",
         }}
       >
-        {['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map(d => (
-          <div key={d} style={{ padding: '8px', fontWeight: 600, textAlign: 'center', background: ' rgba(3, 35, 52, 0.85)',color:'white', borderRight: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
+        {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((d) => (
+          <div
+            key={d}
+            style={{
+              padding: "8px",
+              fontWeight: 600,
+              textAlign: "center",
+              background: " rgba(3, 35, 52, 0.85)",
+              color: "white",
+              borderRight: "1px solid #e2e8f0",
+              borderBottom: "1px solid #e2e8f0",
+            }}
+          >
             {d}
           </div>
         ))}
 
-        {cells.map(date => {
+        {cells.map((date) => {
           const inMonth = date.getMonth() === cursor.getMonth();
           const key = byDateKey(date);
           const hasEvents = eventsByDate.has(key);
@@ -116,28 +145,30 @@ function EventCalendar() {
               key={key}
               onClick={() => setSelectedDateKey(key)}
               style={{
-                textAlign: 'left',
-                padding: '8px',
-                minHeight: '80px',
-                background: isSelected ? 'rgba(3,35,52,0.08)' : '#ffffff',
-                color: inMonth ? '#0f172a' : '#94a3b8',
-                borderRight: '1px solid #e2e8f0',
-                borderBottom: '1px solid #e2e8f0',
-                position: 'relative',
-                cursor: 'pointer'
+                textAlign: "left",
+                padding: "8px",
+                minHeight: "80px",
+                background: isSelected ? "rgba(3,35,52,0.08)" : "#ffffff",
+                color: inMonth ? "#0f172a" : "#94a3b8",
+                borderRight: "1px solid #e2e8f0",
+                borderBottom: "1px solid #e2e8f0",
+                position: "relative",
+                cursor: "pointer",
               }}
             >
-              <div style={{ fontWeight: 600, marginBottom: '6px' }}>{date.getDate()}</div>
+              <div style={{ fontWeight: 600, marginBottom: "6px" }}>
+                {date.getDate()}
+              </div>
               {hasEvents && (
                 <span
                   style={{
-                    position: 'absolute',
-                    right: '8px',
-                    bottom: '8px',
-                    width: '8px',
-                    height: '8px',
-                    borderRadius: '9999px',
-                    background: 'rgb(185,10,10)'
+                    position: "absolute",
+                    right: "8px",
+                    bottom: "8px",
+                    width: "8px",
+                    height: "8px",
+                    borderRadius: "9999px",
+                    background: "rgb(185,10,10)",
                   }}
                   aria-label="Has events"
                 />
@@ -147,41 +178,49 @@ function EventCalendar() {
         })}
       </div>
 
-      <div style={{ marginTop: '1.25rem' }}>
+      <div style={{ marginTop: "1.25rem" }}>
         {selectedDateKey ? (
           <>
-            <h3 style={{ marginBottom: '0.5rem' }}>
+            <h3 style={{ marginBottom: "0.5rem" }}>
               Events on {selectedDateKey}
             </h3>
             {selectedEvents.length === 0 ? (
               <div>No events.</div>
             ) : (
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                {selectedEvents.map(e => (
+              <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                {selectedEvents.map((e) => (
                   <li
                     key={e.id}
                     style={{
-                      padding: '12px',
-                      border: '1px solid #e2e8f0',
-                      borderRadius: '8px',
-                      marginBottom: '8px',
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      alignItems: 'center'
+                      padding: "12px",
+                      border: "1px solid #e2e8f0",
+                      borderRadius: "8px",
+                      marginBottom: "8px",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
                     }}
                   >
                     <div>
                       <div style={{ fontWeight: 600 }}>{e.title}</div>
-                      <div style={{ fontSize: '0.9rem', color: '#64748b' }}>{e.category}</div>
+                      <div style={{ fontSize: "0.9rem", color: "#64748b" }}>
+                        {e.category}
+                      </div>
                     </div>
-                    <Link to="/events" className="btn btn-outline">Details</Link>
+                    <Link
+                      to={`/events/${e.id}`}
+                      aria-label={`View details of ${e.title}`}
+                      className="btn btn-outline"
+                    >
+                      Details
+                    </Link>
                   </li>
                 ))}
               </ul>
             )}
           </>
         ) : (
-          <div style={{ color: '#64748b' }}>Select a date to see events.</div>
+          <div style={{ color: "#64748b" }}>Select a date to see events.</div>
         )}
       </div>
     </div>

@@ -21,50 +21,64 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    const nameRegex = /^[A-Za-z\s]{3,50}$/;
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const subjectRegex = /^.{3,100}$/;
-    const messageRegex = /^.{10,500}$/;
+  // Regex validation
+  const nameRegex = /^[A-Za-z\s]{3,50}$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const subjectRegex = /^.{3,100}$/;
+  const messageRegex = /^.{10,500}$/;
 
-    let newErrors = {};
+  let newErrors = {};
 
-    if (!nameRegex.test(formData.name)) {
-      newErrors.name = "Please enter a valid name (only letters, 3–50 chars).";
-    }
-    if (!emailRegex.test(formData.email)) {
-      newErrors.email = "Please enter a valid email address.";
-    }
-    if (!subjectRegex.test(formData.subject)) {
-      newErrors.subject = "Subject must be between 3 and 100 characters.";
-    }
-    if (!messageRegex.test(formData.message)) {
-      newErrors.message = "Message must be between 10 and 500 characters.";
-    }
+  if (!nameRegex.test(formData.name)) {
+    newErrors.name = "Please enter a valid name (only letters, 3–50 chars).";
+  }
+  if (!emailRegex.test(formData.email)) {
+    newErrors.email = "Please enter a valid email address.";
+  }
+  if (!subjectRegex.test(formData.subject)) {
+    newErrors.subject = "Subject must be between 3 and 100 characters.";
+  }
+  if (!messageRegex.test(formData.message)) {
+    newErrors.message = "Message must be between 10 and 500 characters.";
+  }
 
-    setErrors(newErrors);
+  setErrors(newErrors);
 
-    if (Object.keys(newErrors).length > 0) return;
+  if (Object.keys(newErrors).length > 0) return;
 
-    setIsSubmitting(true);
+  setIsSubmitting(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-
-    const contacts = JSON.parse(localStorage.getItem("contacts") || "[]");
-    contacts.push({
-      ...formData,
-      id: Date.now(),
-      timestamp: new Date().toISOString(),
+  try {
+    // ✅ Send to backend API
+    const res = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
     });
-    localStorage.setItem("contacts", JSON.stringify(contacts));
 
+    const data = await res.json();
+
+    if (res.ok) {
+      setIsSubmitted(true);
+      alert("✅ " + data.message);
+
+      // Reset form
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } else {
+      alert("❌ " + data.message);
+    }
+  } catch (err) {
+    console.error("Error:", err);
+    alert("⚠️ Could not connect to server");
+  } finally {
     setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormData({ name: "", email: "", subject: "", message: "" });
     setErrors({});
-  };
+  }
+};
+
 
   if (isSubmitted) {
     return (
